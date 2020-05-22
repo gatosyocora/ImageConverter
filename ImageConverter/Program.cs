@@ -1,7 +1,8 @@
-﻿using System.IO;
+using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
 using Gatosyocora.ImageConverter;
+using System;
 
 namespace Gatosyocora.ImageConverter
 {
@@ -9,9 +10,15 @@ namespace Gatosyocora.ImageConverter
     {
         static void Main(string[] args)
         {
-            if (args?.Length > 0 && string.IsNullOrEmpty(args[0])) return;
-
-            ImageConverterLogic.FlipHorizontal(args[0]);
+			try
+			{
+				ImageConverterLogic.FlipHorizontal(args[0]);
+			}
+			catch (Exception e)
+			{
+				File.AppendAllText("errorlog.txt", "ErrorMessage:"+e.Message);
+				File.AppendAllText("errorlog.txt", "arg:"+args[0]);
+			}
         }
     }
 }
