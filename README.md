@@ -12,9 +12,9 @@ Windowsでファイルを右クリックした際に表示される「送る」�
 解凍後に含まれるImageConverter.exeをいいように使ってあげてください
 
 ## 開発環境
-Visual Studio 2019
-.Net 3.0.100
-Windows 10 Home version 1903
+* Visual Studio 2019
+* .Net 3.0.100
+* Windows 10 Home version 1903
 
 ## ライセンス
 [MIT License](https://github.com/gatosyocora/ImageConverter/blob/master/LICENSE)
