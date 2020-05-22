@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Gatosyocora.ImageConverter
 {
-    static class ImageConverterLogic
+    public static class ImageConverterLogic
     {
         /// <summary>
         /// ファイルパスから画像を読み込む
