@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -42,7 +42,7 @@ namespace Gatosyocora.ImageConverter
         /// <param name="filePath"></param>
         private static void SaveImage(Image image, string filePath)
         {
-            if (image != null)
+            if (image == null)
             {
                 throw new NullReferenceException();
             }
@@ -84,7 +84,7 @@ namespace Gatosyocora.ImageConverter
         /// <param name="filePath"></param>
         private static void FlipHorizontal(Image image)
         {
-            if (image != null)
+            if (image == null)
             {
                 throw new NullReferenceException();
             }
@@ -98,7 +98,7 @@ namespace Gatosyocora.ImageConverter
         /// <param name="filePath"></param>
         private static void FlipVertical(Image image)
         {
-            if (image != null)
+            if (image == null)
             {
                 throw new NullReferenceException();
             }
