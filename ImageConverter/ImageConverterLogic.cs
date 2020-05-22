@@ -5,7 +5,7 @@ using System.Drawing.Imaging;
 using System.IO;
 using System.Text;
 
-namespace Gatosyocora.ImageConverter.Logic
+namespace Gatosyocora.ImageConverter
 {
     static class ImageConverterLogic
     {

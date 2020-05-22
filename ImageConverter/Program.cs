@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Drawing;
 using System.Drawing.Imaging;
-using Gatosyocora.ImageConverter.Logic;
+using Gatosyocora.ImageConverter;
 
 namespace Gatosyocora.ImageConverter
 {
