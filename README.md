@@ -9,6 +9,7 @@ Windowsでファイルを右クリックした際に表示される「送る」�
 [こちら](https://www.atmarkit.co.jp/ait/articles/1109/30/news131.html)の手順で設定できます
 
 [Releases](https://github.com/gatosyocora/ImageConverter/releases)から最新のリリースのzipファイルをダウンロードして解凍します
+
 解凍後に含まれるImageConverter.exeをいいように使ってあげてください
 
 ## 開発環境
