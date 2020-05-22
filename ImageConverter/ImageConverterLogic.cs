@@ -18,7 +18,7 @@ namespace Gatosyocora.ImageConverter
         {
             if (string.IsNullOrEmpty(filePath))
             {
-                throw new Exception("ファイルパスが設定されていません");
+                throw new NullReferenceException("ファイルパスが設定されていません");
             }
 
             if (!File.Exists(filePath))
