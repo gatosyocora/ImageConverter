@@ -68,6 +68,17 @@ namespace Gatosyocora.ImageConverter.Logic
         }
 
         /// <summary>
+        /// 画像を垂直方向に反転させる
+        /// </summary>
+        /// <param name="filePath">画像のフルパス</param>
+        public static void FlipVertical(string filePath)
+        {
+            var image = LoadImage(filePath);
+            FlipVertical(image);
+            SaveImage(image, filePath);
+        }
+
+        /// <summary>
         /// 画像を水平方向に反転させる
         /// </summary>
         /// <param name="filePath"></param>
@@ -79,6 +90,20 @@ namespace Gatosyocora.ImageConverter.Logic
             }
 
             image.RotateFlip(RotateFlipType.Rotate180FlipY);
+        }
+
+        /// <summary>
+        /// 画像を垂直方向に反転させる
+        /// </summary>
+        /// <param name="filePath"></param>
+        private static void FlipVertical(Image image)
+        {
+            if (image != null)
+            {
+                throw new NullReferenceException();
+            }
+
+            image.RotateFlip(RotateFlipType.Rotate180FlipX);
         }
     }
 }
